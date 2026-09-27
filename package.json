@@ -1,0 +1,16 @@
+{
+  "name": "slop-meter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node verify.cjs"
+  },
+  "devDependencies": {
+    "electron": "42.4.0",
+    "playwright": "1.59.1"
+  },
+  "description": "A desktop slop meter with a transparent video opening and messy mud eruptions."
+}
