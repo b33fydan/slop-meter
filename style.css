@@ -1,1 +1,93 @@
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;color:#f7f3e9;font-family:'Trebuchet MS',sans-serif}button,input{cursor:pointer}button{font:700 12px 'Trebuchet MS';color:#fff;background:#2a2638;border:1px solid #565066;border-radius:7px;padding:9px 12px}button:hover{background:#49405b}button.selected{background:#b3ff28;color:#171322;border-color:#b3ff28}.backdrop{position:fixed;inset:0;pointer-events:none}header{position:absolute;left:4%;right:4%;top:3%;height:15%;display:flex;align-items:center;gap:3vw}.edition{font-size:10px;font-weight:900;letter-spacing:1px;max-width:185px;line-height:1.5}.edition span{display:block;color:#938aa4;font-size:8px;margin-top:7px}h1{font-family:Impact,'Arial Black',sans-serif;font-size:clamp(42px,7.7vw,125px);letter-spacing:-3px;line-height:1;margin:0;transform:rotate(-2deg);color:#b3ff28;text-shadow:3px 5px 0 #08060e,-2px -2px 0 #08060e,0 9px 0 #559c11}h1 span{color:#ff48af;text-shadow:3px 5px 0 #08060e,0 9px 0 #a51c64}h1 i{font:14px sans-serif;vertical-align:top;letter-spacing:0}.onair{margin-left:auto;font-size:9px;letter-spacing:2px;white-space:nowrap}.onair b{color:#b3ff28}.frame-label{position:absolute;top:-25px;left:0;right:0;font-size:10px;letter-spacing:2px;font-weight:bold;color:#bcb4cd}.frame-label span{float:right;color:#b3ff28}#aperture{position:absolute;border:2px solid #81718e;box-shadow:0 0 0 7px #08060e,0 0 0 8px #40334f;pointer-events:none}.corner{position:absolute;width:23px;height:23px;border-color:#b3ff28;border-style:solid;border-width:0}.tl{top:-3px;left:-3px;border-top-width:4px;border-left-width:4px}.tr{top:-3px;right:-3px;border-top-width:4px;border-right-width:4px}.bl{bottom:-3px;left:-3px;border-bottom-width:4px;border-left-width:4px}.br{bottom:-3px;right:-3px;border-bottom-width:4px;border-right-width:4px}#align-guide{display:none;background:#b3ff2833;position:absolute;inset:0;align-items:center;justify-content:center;flex-direction:column;font-weight:bold;text-shadow:0 2px 4px #000;cursor:move}#align-guide small{font-size:11px;margin:12px}.aligning #aperture{pointer-events:auto}.aligning #align-guide{display:flex}#meter{position:absolute;right:4%;top:21%;bottom:16%;width:19%;border-left:1px solid #41344d;padding-left:22px}.meter-top{font-size:10px;letter-spacing:3px;color:#b3ff28}.meter-top span{display:block;color:#9b90ad;font-size:8px;margin-top:5px}#mascot{position:absolute;top:2%;right:0;font-size:clamp(40px,6vw,98px);filter:drop-shadow(0 5px 0 #000);transform:rotate(8deg);transform-origin:50% 75%}#verdict{margin-top:13%;font-family:Impact,sans-serif;font-size:clamp(16px,2.3vw,36px);color:#b3ff28;max-width:65%;line-height:1}.scale{position:absolute;top:31%;bottom:19%;left:22px;right:0;display:flex;gap:23px}.rail{position:relative;width:38px;flex-shrink:0;border:4px solid #08060e;border-radius:25px;background:linear-gradient(#ff3595,#ff553c,#ffca35,#b3ff28,#24ffb8);box-shadow:0 0 0 1px #65516f}#fill{position:absolute;inset:0;background:#08060e99;border-radius:20px;height:100%}#thumb{position:absolute;left:-10px;bottom:0;width:50px;height:26px;border:3px solid #08060e;border-radius:8px;background:#f7f3e9;color:#151020;text-align:center;line-height:18px;font-weight:bold;box-shadow:0 2px 10px #0008;transform:translateY(50%)}#rating{position:absolute;inset:-12px -16px;width:62px;height:calc(100% + 24px);opacity:0;writing-mode:vertical-lr;direction:rtl;margin:0}.labels{display:flex;flex-direction:column;justify-content:space-between;font-size:clamp(8px,1vw,14px);font-weight:800;color:#aea1bc;letter-spacing:.5px}.labels b{color:#ff48af}.labels .good{color:#24ffb8}.score{position:absolute;bottom:0;display:flex;gap:12px;align-items:center}.score strong{font-family:Impact,sans-serif;font-size:clamp(30px,4vw,60px);line-height:1}.score span{font-size:8px;color:#9b90ad;line-height:1.7;letter-spacing:1px}#flaws{position:absolute;left:5%;bottom:17%;display:none;width:175px}body.portrait #flaws{display:block}#flaws>span{display:block;color:#aa9fb9;font-size:10px;letter-spacing:2px}#count{display:block;font:90px Impact;color:#ff48af}#flaws button{font-size:24px;width:58px}#flaws div{margin-top:15px;font-size:8px;letter-spacing:1px;color:#9a8ea7}footer{position:absolute;left:4%;right:27%;bottom:11%;display:flex;align-items:center;gap:25px}.stamp{border:2px solid #b3ff28;color:#b3ff28;transform:rotate(-5deg);padding:7px 12px;font-weight:900;font-size:12px;line-height:1.1;flex-shrink:0}.stamp span{font-size:16px}.ticker{font-size:10px;font-weight:bold;letter-spacing:2px;color:#b0a4c1}#controls{position:absolute;bottom:4%;left:4%;display:flex;gap:5px;align-items:center}#controls label{display:flex;gap:7px;align-items:center;font-size:10px;padding:0 7px}#size{width:80px;accent-color:#b3ff28}#hint{position:absolute;bottom:1.4%;left:4%;font-size:9px;color:#887c98;letter-spacing:.4px}#warning{position:absolute;top:0;left:0;background:#a11;font-size:12px}#particles{position:fixed;inset:0;pointer-events:none}.clean #controls,.clean #hint,.clean #flaws button{visibility:hidden}.meltdown #mascot{animation:go-crazy .12s infinite alternate}.meltdown #verdict{color:#ff48af}.meltdown h1{filter:drop-shadow(0 0 10px #ff48af77)}@keyframes go-crazy{from{transform:rotate(-22deg) scale(1.15)}to{transform:rotate(25deg) scale(1.4)}}@media(max-width:1000px){.edition{display:none}#controls{gap:3px}button{padding:7px 8px;font-size:10px}.onair{font-size:8px}.scale{gap:12px}#meter{padding-left:14px}.scale{left:14px}}
+
+/* Reserve most of the display for the video, with the branding and setup controls outside it. */
+header{top:2%;height:7%;gap:2vw}
+h1{font-size:clamp(36px,5.4vw,76px)}
+.edition{font-size:9px;max-width:160px}
+.edition span{font-size:7px}
+#meter{bottom:24%}
+footer{left:77%;right:4%;bottom:4%;height:17%;flex-direction:column;align-items:flex-start;justify-content:center;gap:16px}
+.ticker{font-size:9px;line-height:1.7;letter-spacing:1px}
+#controls{right:26%;flex-wrap:wrap}
+#size{width:105px}
+#size-value{min-width:30px;font-variant-numeric:tabular-nums;color:#b3ff28}
+#aperture{touch-action:none;user-select:none}
+.corner{z-index:1}
+.aligning .corner{width:30px;height:30px;background:#b3ff2840;pointer-events:auto}
+.aligning .tl,.aligning .br{cursor:nwse-resize}
+.aligning .tr,.aligning .bl{cursor:nesw-resize}
+@media(max-width:1000px){#controls{right:4%}footer{bottom:18%;height:auto}.stamp{display:none}#meter{bottom:30%}#align-guide{font-size:12px}#align-guide small{font-size:10px;text-align:center}}
+
+/* Portrait keeps its full-height opening clear by placing setup controls in the left column. */
+.portrait #branding{top:4%;right:auto;width:22%;height:auto;flex-direction:column;align-items:flex-start;gap:14px}
+.portrait h1{order:-1;font-size:clamp(32px,3.7vw,76px)}
+.portrait .onair{margin-left:0;font-size:8px;letter-spacing:1px}
+.portrait #flaws{left:4%;top:38%;bottom:auto;width:22%}
+.portrait #controls{right:auto;width:22%;bottom:80px}
+.portrait #hint{width:22%;bottom:14px;line-height:1.6}
+
+/* Reaction buttons stay in the right rail, outside the video in both formats. */
+body:not(.portrait) #branding{right:27%}
+#reactions{position:absolute;top:clamp(14px,2.5vh,36px);right:4%;width:19%;display:flex;flex-direction:column;align-items:flex-end;gap:16px}
+#human-taste{width:100%;min-height:clamp(64px,8.5vh,120px);padding:10px 12px;border:3px solid #ff9b9b;border-radius:16px;background:linear-gradient(#ff4747,#e3112e);box-shadow:0 8px 0 #790919,0 12px 24px #0008,inset 0 2px 0 #ffc8c855;font:clamp(21px,2.35vw,48px) Impact,'Arial Black',sans-serif;letter-spacing:1px;text-shadow:0 3px 0 #890818;transition:transform .1s,box-shadow .1s,filter .1s}
+#human-taste:hover{filter:brightness(1.12)}
+#human-taste:active{transform:translateY(5px);box-shadow:0 3px 0 #790919,0 5px 12px #0008}
+#sus{font-size:clamp(14px,1.1vw,21px);padding:8px 18px;background:#3c3044;border:2px solid #f2c45c;border-radius:10px;box-shadow:0 4px 0 #171020;color:#ffdf85}
+#sus:hover{background:#56405b}
+#sus:active{transform:translateY(3px);box-shadow:0 1px 0 #171020}
+#reactions button:focus-visible{outline:3px solid #fff;outline-offset:5px}
+#sound-status{position:absolute;right:4%;bottom:1%;width:19%;font-size:11px;color:#ff9b9b}
+
+/* Move the whole right column about one CSS inch, limited by the display edge. */
+#meter,#reactions,#sound-status,footer{right:max(12px,calc(4% - 96px))}
+footer{left:auto;width:19%}
+/* Hover targets straddle the border; the center remains transparent to clicks. */
+.edge{position:absolute;z-index:2;pointer-events:auto;min-width:0;min-height:0;padding:0;border:0;border-radius:0;background:transparent;opacity:0;touch-action:none;transition:opacity .12s}
+.edge-left,.edge-right{top:24px;bottom:24px;width:20px;cursor:ew-resize}
+.edge-top,.edge-bottom{left:24px;right:24px;height:20px;cursor:ns-resize}
+.edge-left{left:-10px}.edge-right{right:-10px}.edge-top{top:-10px}.edge-bottom{bottom:-10px}
+.edge:hover,.edge:focus-visible,.resizing .edge{opacity:1;background:#b3ff2840}
+.edge:focus-visible{outline:2px solid #b3ff28;outline-offset:-2px}
+.corner{z-index:3;pointer-events:auto}
+.tl,.br{cursor:nwse-resize}.tr,.bl{cursor:nesw-resize}
+.corner:hover{background:#b3ff2840}
+.frame-label{pointer-events:none}
+
+/* Larger recording typography: every right-column label is 175% of its previous size. */
+:root{--right-width:max(19vw,440px)}
+#meter,#reactions,#sound-status,footer{width:var(--right-width)}
+#human-taste{font-size:clamp(36.75px,4.1125vw,84px);line-height:1.05}
+#sus{font-size:clamp(24.5px,1.925vw,36.75px)}
+.meter-top{font-size:17.5px;letter-spacing:3px}
+.meter-top span{font-size:14px}
+#verdict{font-size:clamp(28px,4.025vw,63px);max-width:100%;margin-top:0;line-height:1.05}
+.labels{font-size:clamp(14px,1.75vw,24.5px);line-height:1.1}
+.score strong{font-size:clamp(52.5px,7vw,105px)}
+.score span{font-size:14px}
+#thumb{font-size:28px;height:36px;line-height:28px}
+.stamp{font-size:21px}.stamp span{font-size:28px}
+.ticker{font-size:15.75px;line-height:1.35;letter-spacing:1px}
+#sound-status{font-size:19.25px}
+#meter{top:var(--meter-top,23%);bottom:var(--meter-bottom,23%);display:grid;grid-template-rows:auto auto minmax(140px,1fr) auto;row-gap:16px}
+#mascot{top:0;right:8px}
+#verdict{padding-right:0}
+.scale{position:relative;top:auto;bottom:auto;left:auto;right:auto;min-height:0;gap:23px}
+.score{position:relative;bottom:auto}
+footer{height:auto;bottom:3%;gap:12px;justify-content:flex-end}
+header{height:auto}
+h1{font-size:clamp(68px,8vw,140px);position:relative;flex-shrink:0}
+h1 i{position:absolute;top:0;right:-16px;font-size:20px}
+.portrait h1{font-size:clamp(60px,7.4vw,140px);line-height:.94}
+.portrait h1 span{display:block}
+@media(max-height:850px){.portrait .edition{display:none}#meter{row-gap:10px}.stamp{padding:5px 9px}.scale{gap:18px}}
+
+#verdict{max-width:calc(100% - clamp(40px,6vw,98px) - 14px)}
+body:not(.portrait) #branding{right:calc(var(--right-width) + max(12px,calc(4vw - 96px)) + 28px)}
+@media(max-height:850px){footer{flex-direction:row;align-items:center}.stamp{display:block}.ticker{min-width:0}}
+@media(max-width:1500px){body:not(.portrait) .edition{display:none}}
+
+/* A larger custom mascot keeps its deadpan expression on every operating system. */
+:root{--mascot-size:clamp(110px,10vw,165px)}
+#mascot{width:var(--mascot-size);height:var(--mascot-size);top:12px;right:28px;font-size:0;line-height:0;pointer-events:none}
+#mascot img{display:block;width:100%;height:100%;user-select:none}
+#verdict{max-width:calc(100% - var(--mascot-size) - 48px)}

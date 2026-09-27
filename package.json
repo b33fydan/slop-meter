@@ -1,16 +1,55 @@
 {
   "name": "slop-meter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "commonjs",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",
-    "test": "node verify.cjs"
+    "test": "node verify.cjs",
+    "package:win": "electron-builder --win portable --x64 --publish never"
   },
   "devDependencies": {
     "electron": "42.4.0",
+    "electron-builder": "26.15.3",
     "playwright": "1.59.1"
   },
-  "description": "A desktop slop meter with a transparent video opening and messy mud eruptions."
+  "description": "A desktop slop meter with a transparent video opening and messy mud eruptions.",
+  "productName": "Slop Meter",
+  "author": "Dan",
+  "license": "UNLICENSED",
+  "build": {
+    "appId": "com.b33fydan.slop-meter",
+    "productName": "Slop Meter",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "renderer.js",
+      "index.html",
+      "style.css",
+      "assets/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "npmRebuild": false,
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/app-icon.ico",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "Slop-Meter-${version}-Windows.exe",
+      "requestExecutionLevel": "user"
+    }
+  }
 }

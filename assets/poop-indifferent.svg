@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <linearGradient id="body" x1=".2" y1="0" x2=".75" y2="1">
+      <stop stop-color="#bd865e"/><stop offset=".45" stop-color="#926044"/><stop offset="1" stop-color="#563625"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#efd0a6" stop-opacity=".65"/><stop offset="1" stop-color="#efd0a6" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="lids"><path d="M57 130h43v19H57zM127 130h43v19h-43z"/></clipPath>
+  </defs>
+  <path d="M110 15c1 20 30 24 22 44 28 2 48 19 35 38 28 7 39 28 20 47 23 15 22 40-2 51-29 14-119 15-150-1-25-12-26-35-5-50-20-20-7-41 23-48-17-18 4-36 36-39 8-12 19-22 21-42Z" fill="url(#body)" stroke="#442b23" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M88 60c14 7 33 6 45 1M53 99c29 10 83 12 114 0M34 146c25 12 121 16 151 0" fill="none" stroke="#5e3a2b" stroke-opacity=".5" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112 33c-5 19-20 31-40 38-13 5-14 15-7 18 9 5 28 4 39 2-16-5-24-9-21-14 3-6 33-12 35-24 2-9-2-16-6-20ZM46 115c25-10 57-6 72-1-33-1-58 6-66 14-7 6-17-8-6-13Z" fill="url(#shine)"/>
+  <g clip-path="url(#lids)">
+    <ellipse cx="78" cy="129" rx="21" ry="20" fill="#fff5e5"/>
+    <ellipse cx="148" cy="129" rx="21" ry="20" fill="#fff5e5"/>
+    <ellipse cx="79" cy="135" rx="5" ry="8" fill="#29201e"/>
+    <ellipse cx="147" cy="135" rx="5" ry="8" fill="#29201e"/>
+  </g>
+  <path d="M57 130h43m27 0h43M92 174h37" fill="none" stroke="#35251f" stroke-width="6" stroke-linecap="round"/>
+</svg>
